@@ -13,9 +13,17 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
 
+from dashing.utils import router
+
+import sys
+sys.path.append("/home/gram/Documents/dashing_servicegroup_widget")
+from dashing_servicegroup_widget import ServicegroupWidget
+router.register(ServicegroupWidget, 'servicegroup_widget')
+
 urlpatterns = [
+    url(r'^dashboard/', include(router.urls)),
     url(r'^admin/', admin.site.urls),
 ]

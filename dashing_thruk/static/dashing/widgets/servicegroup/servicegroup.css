@@ -1,0 +1,44 @@
+.widget-servicegroup li { 
+    background-color: auto;
+}
+
+.widget-servicegroup h1 { 
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.widget-servicegroup ol, ul {
+    margin: 0 15px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.widget-servicegroup ol {
+    list-style-position: inside;
+}
+
+.widget-servicegroup li {
+    margin-bottom: 5px;
+}
+
+.widget-servicegroup .list-nostyle {
+    list-style: none;
+}
+
+.widget-servicegroup .label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.widget-servicegroup .value {
+    float: right;
+    margin-left: 12px;
+    font-weight: 600;
+    color: $value-color;
+}
+
+.widget-servicegroup .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.widget-servicegroup .more-info {
+    color: rgba(255, 255, 255, 0.7);
+}

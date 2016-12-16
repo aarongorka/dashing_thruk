@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+DASHING = {
+    'INSTALLED_WIDGETS': ('servicegroup', 'list'),
+}
 
 # Application definition
 
