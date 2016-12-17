@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+THRUK_URL = 'muh url'
+SERVICEGROUPS = ['servicegroup1', 'servicegroup2', 'servicegropu3']
 DASHING = {
     'INSTALLED_WIDGETS': ('servicegroup', 'list'),
 }
