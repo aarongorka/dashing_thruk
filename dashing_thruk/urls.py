@@ -19,8 +19,7 @@ from django.contrib import admin
 from dashing.utils import router
 
 import sys
-sys.path.append("/home/gram/Documents/dashing_servicegroup_widget")
-from dashing_servicegroup_widget import ServicegroupWidget,sg_asdf
+from dashing_thruk.dashing_servicegroup_widget import ServicegroupWidget,sg_asdf
 router.register(ServicegroupWidget, 'servicegroup_widget')
 router.register(sg_asdf, 'sg_asdf')
 
