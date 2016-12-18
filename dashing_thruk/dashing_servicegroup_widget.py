@@ -29,6 +29,10 @@ class ServicegroupWidget(ListWidget):
         else:
             return "green"
 
+    def get_url(self):
+        url = 'https://server.domain.tld/thruk?servicegroup={}'.format(self.__class__.__name__)
+        return url
+
     def get_context(self):
         return {
             'title': self.get_title(),
@@ -37,10 +41,11 @@ class ServicegroupWidget(ListWidget):
             'updatedAt': self.get_updated_at(),
             'data': self.get_data(),
             'color': self.get_color(),
+            'url': self.get_url(),
         }
 
 class sg_asdf(ServicegroupWidget):
     def get_color(self):
-        return 'green'
+        return 'orange'
     def get_title(self):
         return self.__class__.__name__ # call this separately and replace with proper name

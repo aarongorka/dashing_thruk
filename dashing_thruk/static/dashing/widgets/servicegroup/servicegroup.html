@@ -1,12 +1,12 @@
 <div>
-    <h1>{ title }</h1>
+    <h1><a rv-href="url">{ title }</a></h1>
     { status }
     <ul>
-      <li rv-each-item="data">
+      <a rv-href="url"><li rv-each-item="data">
         <span class="label">{ item.label }</span>
         <span class="value">{ item.value }</span>
-      </li>
+      </li></a>
     </ul>
-    <p class="more-info" rv-show="moreInfo">{ moreInfo }</p>
+    <p class="more-info" rv-show="moreInfo"><a rv-href="url">{ moreInfo }</a></p>
     <p class="updated-at" rv-show="updatedAt">{ updatedAt }</p>
 </div>

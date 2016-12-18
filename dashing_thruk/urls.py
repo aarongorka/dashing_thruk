@@ -22,6 +22,7 @@ import sys
 from dashing_thruk.dashing_servicegroup_widget import ServicegroupWidget,sg_asdf
 router.register(ServicegroupWidget, 'servicegroup_widget')
 router.register(sg_asdf, 'sg_asdf')
+router.register(sg_asdf, 'sg_fdsa')
 
 urlpatterns = [
     url(r'^dashboard/', include(router.urls)),
