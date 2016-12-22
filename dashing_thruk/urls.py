@@ -19,10 +19,10 @@ from django.contrib import admin
 from dashing.utils import router
 
 import sys
-from dashing_thruk.dashing_servicegroup_widget import ServicegroupWidget,sg_asdf
-router.register(ServicegroupWidget, 'servicegroup_widget')
-router.register(sg_asdf, 'sg_asdf')
-router.register(sg_asdf, 'sg_fdsa')
+from dashing_thruk.dashing_servicegroup_widget import *
+router.register(sg_app_asdf, 'sg_app_asdf')
+router.register(sg_app_fdsa, 'sg_app_fdsa')
+router.register(sg_app_zxcv, 'sg_app_zxcv')
 
 urlpatterns = [
     url(r'^dashboard/', include(router.urls)),
